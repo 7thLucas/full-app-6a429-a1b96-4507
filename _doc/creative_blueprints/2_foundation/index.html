@@ -1,0 +1,67 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-col { width: 50%; }
+  .mode-portrait .sl-col { width: 100%; }
+  .mode-landscape .sl-visual { width: 40%; }
+  .mode-portrait .sl-visual { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-8">
+    <!-- Header -->
+    <div>
+      <p class="text-xs font-bold uppercase tracking-widest mb-1" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">The Foundation</p>
+      <h2 class="text-4xl font-black leading-tight" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Why {{config.appName}} exists</h2>
+    </div>
+
+    <!-- Two-column split -->
+    <div class="sl-layout flex flex-1 gap-8">
+
+      <!-- Problem -->
+      <div class="sl-col flex flex-col gap-4">
+        <div class="flex items-center gap-2">
+          <span class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background-color: #FEE2E2; color: #B91C1C;">✗</span>
+          <h3 class="text-xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">The Problem</h3>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="rounded-xl p-4" style="background-color: {{config.brandColor.muted}}; border-left: 4px solid #EF4444;">
+            <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}};">Human tutors cost $30–$80/hr</p>
+            <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Most learners can't afford consistent practice with a real tutor.</p>
+          </div>
+          <div class="rounded-xl p-4" style="background-color: {{config.brandColor.muted}}; border-left: 4px solid #EF4444;">
+            <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}};">Existing apps ignore speaking</p>
+            <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Most language apps focus on reading and writing — not the speaking that matters most for real-world use.</p>
+          </div>
+          <div class="rounded-xl p-4" style="background-color: {{config.brandColor.muted}}; border-left: 4px solid #EF4444;">
+            <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}};">Fear of judgment blocks progress</p>
+            <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Learners avoid speaking practice because they feel embarrassed making mistakes in front of others.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col flex flex-col gap-4">
+        <div class="flex items-center gap-2">
+          <span class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background-color: {{config.brandColor.secondary}}; color: {{config.brandColor.secondaryForeground}};">✓</span>
+          <h3 class="text-xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">The Solution</h3>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="rounded-xl p-4" style="background-color: {{config.brandColor.accent}}; border-left: 4px solid {{config.brandColor.primary}};">
+            <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}};">AI voice conversations, 24/7</p>
+            <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Natural spoken practice with an always-available AI tutor — no scheduling, no cost per session.</p>
+          </div>
+          <div class="rounded-xl p-4" style="background-color: {{config.brandColor.accent}}; border-left: 4px solid {{config.brandColor.primary}};">
+            <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}};">Non-interruptive, personalized feedback</p>
+            <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Pronunciation, grammar, and vocabulary coaching delivered after each turn — conversation flow preserved, confidence intact.</p>
+          </div>
+          <div class="rounded-xl p-4" style="background-color: {{config.brandColor.accent}}; border-left: 4px solid {{config.brandColor.primary}};">
+            <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}};">Adaptive learning, zero judgment</p>
+            <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">AI meets every learner at their current level (Beginner → Advanced) and grows with them in a fully safe, encouraging environment.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
