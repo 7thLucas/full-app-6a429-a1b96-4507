@@ -1,0 +1,70 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+  .mode-landscape .sl-roi { grid-column: span 3; }
+  .mode-portrait .sl-roi { grid-column: span 2; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div>
+      <p class="text-xs font-bold uppercase tracking-widest mb-1" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">Outcomes</p>
+      <h2 class="text-4xl font-black leading-tight" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Measurable results for learners</h2>
+    </div>
+
+    <!-- Metric cards grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <div class="rounded-2xl p-5 flex flex-col gap-1" style="background-color: {{config.brandColor.accent}};">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: {{config.brandColor.accentForeground}};">Accessibility</p>
+        <p class="text-3xl font-black" style="color: {{config.brandColor.primary}};">24/7</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">AI tutor available anytime — no appointments, no waiting.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-1" style="background-color: {{config.brandColor.secondary}};">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: {{config.brandColor.secondaryForeground}};">Cost</p>
+        <p class="text-3xl font-black" style="color: #065F46;">$0 / session</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">vs. $30–$80/hr for a human tutor — unlimited practice at a fraction of the cost.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-1" style="background-color: {{config.brandColor.muted}};">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: {{config.brandColor.mutedForeground}};">Personalization</p>
+        <p class="text-3xl font-black" style="color: {{config.brandColor.foreground}};">3 Levels</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Beginner → Intermediate → Advanced, with AI that continuously adapts to each learner.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-1" style="background-color: {{config.brandColor.muted}};">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: {{config.brandColor.mutedForeground}};">Scenarios</p>
+        <p class="text-3xl font-black" style="color: {{config.brandColor.foreground}};">6+ Goals</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Daily chat, business English, travel, interviews, presentations, exam prep — all covered.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-1" style="background-color: {{config.brandColor.accent}};">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: {{config.brandColor.accentForeground}};">Confidence</p>
+        <p class="text-3xl font-black" style="color: {{config.brandColor.primary}};">0 Judgment</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Safe, encouraging environment — mistakes become learning moments, never embarrassments.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-1" style="background-color: {{config.brandColor.secondary}};">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: {{config.brandColor.secondaryForeground}};">Consistency</p>
+        <p class="text-3xl font-black" style="color: #065F46;">Daily streaks</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Gamified streaks, badges, and AI coach notifications keep learners coming back every day.</p>
+      </div>
+
+      <!-- ROI Summary Banner -->
+      <div class="sl-roi rounded-2xl p-6 flex items-center justify-between" style="background: linear-gradient(135deg, {{config.brandColor.primary}}, {{config.brandColor.accentForeground}});">
+        <div>
+          <p class="text-sm font-bold mb-1" style="color: rgba(255,255,255,0.8);">The bottom line</p>
+          <p class="text-xl font-black" style="color: #FFFFFF;">Personalized AI speaking practice that used to cost hundreds — now accessible to everyone, every day.</p>
+        </div>
+        <div class="text-right shrink-0 ml-8">
+          <p class="text-xs mb-1" style="color: rgba(255,255,255,0.7);">vs. 1 human tutor session/week</p>
+          <p class="text-3xl font-black" style="color: #FFFFFF;">~95% savings</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
