@@ -1,0 +1,76 @@
+<style>
+  .mode-landscape .sl-steps { flex-direction: row; }
+  .mode-portrait .sl-steps { flex-direction: column; }
+  .mode-landscape .sl-step { flex: 1; }
+  .mode-portrait .sl-step { width: 100%; }
+  .mode-landscape .sl-arrow { display: flex; align-items: center; padding-top: 2.5rem; }
+  .mode-portrait .sl-arrow { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-8">
+
+    <!-- Header -->
+    <div>
+      <p class="text-xs font-bold uppercase tracking-widest mb-1" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">How It Works</p>
+      <h2 class="text-4xl font-black leading-tight" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">From first word to fluency</h2>
+    </div>
+
+    <!-- Steps -->
+    <div class="sl-steps flex flex-1 gap-3">
+
+      <!-- Step 1 -->
+      <div class="sl-step flex flex-col gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center font-black text-lg" style="background-color: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">1</div>
+        <div class="rounded-2xl p-5 flex flex-col gap-2 flex-1" style="background-color: {{config.brandColor.accent}};">
+          <span class="text-3xl">📋</span>
+          <p class="font-bold text-base" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Proficiency Assessment</p>
+          <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Complete a short onboarding assessment. {{config.appName}} identifies your level (Beginner, Intermediate, or Advanced), your learning goals, and areas to improve.</p>
+        </div>
+      </div>
+
+      <div class="sl-arrow" style="color: {{config.brandColor.mutedForeground}}; font-size: 1.5rem;">→</div>
+
+      <!-- Step 2 -->
+      <div class="sl-step flex flex-col gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center font-black text-lg" style="background-color: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">2</div>
+        <div class="rounded-2xl p-5 flex flex-col gap-2 flex-1" style="background-color: {{config.brandColor.secondary}};">
+          <span class="text-3xl">🎙️</span>
+          <p class="font-bold text-base" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Speak with AI Tutor</p>
+          <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Start a voice conversation on any topic or real-life scenario. The AI listens, responds naturally, and holds the conversation at your pace.</p>
+        </div>
+      </div>
+
+      <div class="sl-arrow" style="color: {{config.brandColor.mutedForeground}}; font-size: 1.5rem;">→</div>
+
+      <!-- Step 3 -->
+      <div class="sl-step flex flex-col gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center font-black text-lg" style="background-color: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">3</div>
+        <div class="rounded-2xl p-5 flex flex-col gap-2 flex-1" style="background-color: {{config.brandColor.muted}};">
+          <span class="text-3xl">💬</span>
+          <p class="font-bold text-base" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Get Instant Feedback</p>
+          <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">After each turn, receive pronunciation, grammar, vocabulary, and fluency coaching — delivered without interrupting the conversation flow.</p>
+        </div>
+      </div>
+
+      <div class="sl-arrow" style="color: {{config.brandColor.mutedForeground}}; font-size: 1.5rem;">→</div>
+
+      <!-- Step 4 -->
+      <div class="sl-step flex flex-col gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center font-black text-lg" style="background-color: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">4</div>
+        <div class="rounded-2xl p-5 flex flex-col gap-2 flex-1" style="background-color: {{config.brandColor.accent}};">
+          <span class="text-3xl">📈</span>
+          <p class="font-bold text-base" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Track & Grow</p>
+          <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Review progress on your dashboard — pronunciation score, grammar score, vocabulary growth, streaks — and let the AI adapt your next lesson automatically.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom tagline -->
+    <div class="rounded-xl p-4 text-center" style="background-color: {{config.brandColor.primary}};">
+      <p class="font-semibold text-sm" style="color: {{config.brandColor.primaryForeground}};">Every session makes the AI smarter about your learning needs. The more you speak, the better it gets. 🚀</p>
+    </div>
+
+  </div>
+</section>
