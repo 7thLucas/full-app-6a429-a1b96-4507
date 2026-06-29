@@ -1,0 +1,118 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-left { width: 55%; }
+  .mode-landscape .sl-right { width: 45%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest mb-1" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">North Star Metric</p>
+        <h2 class="text-4xl font-black leading-tight" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Weekly Verified Operations</h2>
+      </div>
+      <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background-color: #FEF3C7; color: #92400E;">Projected impact — based on your inputs</span>
+    </div>
+
+    <div class="sl-layout flex flex-1">
+
+      <!-- Left: Operations + formula -->
+      <div class="sl-left flex flex-col gap-4">
+
+        <!-- Operation definitions -->
+        <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.accent}};">
+          <p class="text-xs font-bold uppercase tracking-wider mb-3" style="color: {{config.brandColor.accentForeground}};">Verified Operations (what we count)</p>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-xs font-bold mt-0.5" style="background-color: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">1</span>
+              <div>
+                <p class="text-sm font-semibold" style="color: {{config.brandColor.foreground}};">Speaking Session Completed</p>
+                <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">User completes a full AI voice conversation practice session with feedback reviewed.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-xs font-bold mt-0.5" style="background-color: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">2</span>
+              <div>
+                <p class="text-sm font-semibold" style="color: {{config.brandColor.foreground}};">Daily Practice Challenge Submitted</p>
+                <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">User completes and submits a daily speaking challenge exercise.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-xs font-bold mt-0.5" style="background-color: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">3</span>
+              <div>
+                <p class="text-sm font-semibold" style="color: {{config.brandColor.foreground}};">Proficiency Level Progress Recorded</p>
+                <p class="text-xs" style="color: {{config.brandColor.mutedForeground}};">System records measurable progress toward next proficiency level (score milestones logged).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formula -->
+        <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.muted}};">
+          <p class="text-xs font-bold uppercase tracking-wider mb-3" style="color: {{config.brandColor.mutedForeground}};">Projected WVO — formula</p>
+          <div class="flex flex-col gap-1 text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-semibold" style="background-color: #FEF3C7; color: #92400E;">Assumption — adjust this</span>
+              <span class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Active users per week</span>
+            </div>
+            <p class="font-mono text-sm mt-2" style="color: {{config.brandColor.foreground}};">
+              <strong>100 users</strong> × <strong>4 sessions/week</strong> = <strong>400 speaking sessions/week</strong>
+            </p>
+            <p class="font-mono text-sm" style="color: {{config.brandColor.foreground}};">
+              <strong>100 users</strong> × <strong>5 daily challenges/week</strong> = <strong>500 daily challenges/week</strong>
+            </p>
+            <div class="mt-2 pt-2" style="border-top: 1px solid {{config.brandColor.border}};">
+              <p class="font-bold text-base" style="color: {{config.brandColor.primary}};">≈ 900 verified operations / week</p>
+              <p class="text-xs mt-0.5" style="color: {{config.brandColor.mutedForeground}};">at 100 active users — scale linearly as user base grows</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Value + ROI -->
+      <div class="sl-right flex flex-col gap-4">
+
+        <!-- Value derivation -->
+        <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: linear-gradient(135deg, {{config.brandColor.primary}}, {{config.brandColor.accentForeground}});">
+          <p class="text-xs font-bold uppercase tracking-wider" style="color: rgba(255,255,255,0.75);">Value per operation</p>
+          <p class="text-sm leading-relaxed" style="color: #FFFFFF;">
+            1 session replaces ~1hr with a human tutor<br/>
+            Human tutor avg: <strong>$40/hr</strong><br/>
+            Value per speaking session: <strong>≈ $40 saved</strong>
+          </p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.25); padding-top: 0.75rem;">
+            <p class="text-xs mb-1" style="color: rgba(255,255,255,0.7);">Total value / week (900 ops)</p>
+            <p class="text-3xl font-black" style="color: #FFFFFF;">$36,000 / wk</p>
+            <p class="text-xs mt-0.5" style="color: rgba(255,255,255,0.7);">≈ <strong>$1.87M / year</strong> in learning value delivered</p>
+          </div>
+        </div>
+
+        <!-- Assumption reminder -->
+        <div class="rounded-2xl p-4" style="background-color: #FEF3C7; border: 1px solid #FCD34D;">
+          <p class="text-xs font-bold uppercase tracking-wider mb-1" style="color: #92400E;">Key assumptions to calibrate</p>
+          <ul class="text-xs flex flex-col gap-1" style="color: #78350F;">
+            <li>• Active user count: <strong>100 (adjust to your actual target)</strong></li>
+            <li>• Sessions per user per week: <strong>4</strong></li>
+            <li>• Daily challenges per user per week: <strong>5</strong></li>
+            <li>• Human tutor rate used as value anchor: <strong>$40/hr</strong></li>
+          </ul>
+        </div>
+
+        <!-- Watch metric -->
+        <div class="rounded-2xl p-4 flex items-center gap-3" style="background-color: {{config.brandColor.secondary}};">
+          <span class="text-2xl">⭐</span>
+          <div>
+            <p class="text-xs font-bold" style="color: {{config.brandColor.secondaryForeground}};">The number to watch</p>
+            <p class="text-sm font-semibold" style="color: {{config.brandColor.foreground}};">Weekly speaking sessions completed — not signups, not installs.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
