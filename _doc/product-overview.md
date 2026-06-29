@@ -1,7 +1,7 @@
-# SpeakFlow — Product Overview
+# SpeakEasy AI — Product Overview
 
 ## Product
-**Name**: SpeakFlow
+**Name**: SpeakEasy AI
 **Category**: AI Language Learning / EdTech
 **Tagline**: Your AI English tutor, available anytime.
 
