@@ -99,6 +99,53 @@ export const configurableSchemas: ConfigurableSchemas = {
       ],
     },
 
+    // ── SpeakFlow App Config ──────────────────────────────────────────────────
+    { fieldName: "appTagline",        type: "string", required: false, label: "App Tagline" },
+    { fieldName: "appDescription",    type: "string", required: false, label: "App Description" },
+    { fieldName: "dailySpeakingGoalMinutes", type: "number", required: false, label: "Daily Speaking Goal (minutes)", min: 1, max: 120 },
+    { fieldName: "streakFreezeEnabled",      type: "boolean", required: false, label: "Enable Streak Freeze" },
+    { fieldName: "maxDailyChallenge",        type: "number", required: false, label: "Max Daily Challenges", min: 1, max: 10 },
+    { fieldName: "defaultProficiencyLevel",  type: "enum", required: false, label: "Default Proficiency Level", options: ["Beginner", "Intermediate", "Advanced"] },
+    { fieldName: "enablePronunciationFeedback", type: "boolean", required: false, label: "Enable Pronunciation Feedback" },
+    { fieldName: "enableGrammarCoaching",       type: "boolean", required: false, label: "Enable Grammar Coaching" },
+    { fieldName: "enableVocabCoaching",         type: "boolean", required: false, label: "Enable Vocabulary Coaching" },
+    { fieldName: "enableAchievementBadges",     type: "boolean", required: false, label: "Enable Achievement Badges" },
+    { fieldName: "enableDailyChallenge",        type: "boolean", required: false, label: "Enable Daily Challenge" },
+    { fieldName: "enableProgressTracking",      type: "boolean", required: false, label: "Enable Progress Tracking" },
+    { fieldName: "aiCoachName",   type: "string", required: false, label: "AI Coach Name" },
+    { fieldName: "aiCoachPersona", type: "string", required: false, label: "AI Coach Persona / Tone" },
+    {
+      fieldName: "practiceScenarios",
+      type: "array",
+      label: "Practice Scenarios",
+      item: {
+        type: "object",
+        fields: [
+          { fieldName: "id",    type: "string", required: true, label: "ID" },
+          { fieldName: "title", type: "string", required: true, label: "Title" },
+          { fieldName: "icon",  type: "string", required: false, label: "Icon (emoji)" },
+          { fieldName: "description", type: "string", required: false, label: "Description" },
+          { fieldName: "difficulty",  type: "enum", required: false, label: "Difficulty", options: ["Beginner", "Intermediate", "Advanced"] },
+        ],
+      },
+    },
+    {
+      fieldName: "achievementBadges",
+      type: "array",
+      label: "Achievement Badges",
+      item: {
+        type: "object",
+        fields: [
+          { fieldName: "id",          type: "string", required: true,  label: "ID" },
+          { fieldName: "title",       type: "string", required: true,  label: "Title" },
+          { fieldName: "description", type: "string", required: false, label: "Description" },
+          { fieldName: "icon",        type: "string", required: false, label: "Icon (emoji)" },
+          { fieldName: "category",    type: "enum",   required: false, label: "Category", options: ["streak", "vocabulary", "pronunciation", "grammar", "milestone"] },
+        ],
+      },
+    },
+    // ── End SpeakFlow Config ─────────────────────────────────────────────────
+
     {
       fieldName: "font",
       type: "object",
