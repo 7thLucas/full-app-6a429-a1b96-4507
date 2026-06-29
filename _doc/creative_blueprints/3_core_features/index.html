@@ -1,0 +1,82 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div class="flex items-end justify-between">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest mb-1" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">Core Features</p>
+        <h2 class="text-4xl font-black leading-tight" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Everything a learner needs</h2>
+      </div>
+      <!-- Persona chips -->
+      <div class="flex gap-2 flex-wrap justify-end">
+        <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background-color: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">Conversational Learner</span>
+        <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background-color: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}};">Business Professional</span>
+        <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background-color: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}};">Exam Candidate</span>
+      </div>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid grid flex-1 gap-4">
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.accent}};">
+        <span class="text-2xl">🎙️</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">AI Voice Conversations</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Hold natural spoken dialogues with the AI tutor on any topic, anytime.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.secondary}};">
+        <span class="text-2xl">🗺️</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Personalized Learning Path</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Proficiency assessment creates an adaptive plan that evolves with every session.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.muted}};">
+        <span class="text-2xl">🎭</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Practice Scenarios</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Real-life simulations: ordering food, travel, business meetings, job interviews, presentations.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.muted}};">
+        <span class="text-2xl">🔊</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Pronunciation Feedback</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Non-interruptive coaching on pronunciation after each speaking turn.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.accent}};">
+        <span class="text-2xl">📚</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Grammar & Vocabulary</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">In-context corrections with simple explanations and natural alternatives suggested.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.secondary}};">
+        <span class="text-2xl">📈</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Progress Tracking & Badges</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Pronunciation score, grammar score, vocabulary growth, streaks, and achievement badges.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.muted}};">
+        <span class="text-2xl">🏆</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Daily Challenges</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Streak-based daily exercises to build a consistent speaking habit.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.accent}};">
+        <span class="text-2xl">🔔</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">AI Coach Notifications</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Personalized reminders, weekly summaries, and motivation messages — all user-controlled.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.secondary}};">
+        <span class="text-2xl">📝</span>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Conversation History</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Review past sessions, feedback, and vocabulary learned to reinforce retention.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
