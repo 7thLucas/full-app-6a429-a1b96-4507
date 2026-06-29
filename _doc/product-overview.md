@@ -19,7 +19,7 @@ Make spoken English practice accessible, personalized, and confidence-building �
 Most language learners lack access to affordable, judgment-free speaking practice with real feedback. Human tutors are expensive ($30–$80/hr) and unavailable 24/7. Existing apps focus on reading/writing but not deep voice conversation with personalized coaching.
 
 ## Solution
-SpeakFlow is a voice-first AI English speaking tutor that holds natural conversations, provides non-interruptive pronunciation/grammar/vocabulary feedback after each response, and builds a personalized adaptive learning plan that evolves with every session.
+SpeakEasy AI is a voice-first AI English speaking tutor that holds natural conversations, provides non-interruptive pronunciation/grammar/vocabulary feedback after each response, and builds a personalized adaptive learning plan that evolves with every session.
 
 ## Brand & Tone
 - **Personality**: Patient, encouraging, professional yet warm — like a trusted private tutor
