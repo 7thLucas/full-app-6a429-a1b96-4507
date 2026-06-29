@@ -1,31 +1,73 @@
-Build an AI English Speaking Tutor that helps users improve their spoken English through natural conversations, personalized feedback, and interactive speaking exercises.
+# SpeakFlow — Product Overview
 
-The app should feel like having a private English tutor available anytime. Users can practice speaking with an AI through voice conversations, and the AI will provide instant feedback on pronunciation, grammar, vocabulary, fluency, and confidence.
+## Product
+**Name**: SpeakFlow
+**Category**: AI Language Learning / EdTech
+**Tagline**: Your AI English tutor, available anytime.
 
-When users first join, they complete a short assessment to determine their English proficiency level (Beginner, Intermediate, or Advanced), learning goals, and areas they want to improve, such as daily conversation, business English, travel, interviews, presentations, or exam preparation.
+## Vision
+Make spoken English practice accessible, personalized, and confidence-building — combining conversational AI, instant feedback, and adaptive learning into one immersive experience available 24/7.
 
-The AI tutor should create a personalized learning plan and continuously adapt lessons based on the user's progress.
+## Users
+- Non-native English speakers at all proficiency levels (Beginner → Advanced)
+- Professionals seeking business English fluency
+- Students preparing for language exams (IELTS, TOEFL, etc.)
+- Travelers improving conversational English
+- Anyone who wants to speak English more confidently without judgment
 
-Users should be able to:
-- Practice real-life conversations with the AI using voice
-- Choose conversation topics based on their interests
-- Complete daily speaking exercises
-- Practice common situations such as ordering food, traveling, business meetings, job interviews, and presentations
-- Learn new vocabulary in context
-- Review previous conversations and feedback
-- Track their learning progress over time
+## Core Problem
+Most language learners lack access to affordable, judgment-free speaking practice with real feedback. Human tutors are expensive ($30–$80/hr) and unavailable 24/7. Existing apps focus on reading/writing but not deep voice conversation with personalized coaching.
 
-The AI English Tutor should act as a patient, encouraging teacher that can:
-- Hold natural voice conversations
-- Correct pronunciation without interrupting the conversation
-- Explain grammar mistakes in simple language
-- Suggest more natural or fluent ways to express ideas
-- Introduce new vocabulary based on the conversation
-- Adjust the difficulty according to the user's level
-- Answer English-related questions at any time
-- Encourage users to speak more confidently
+## Solution
+SpeakFlow is a voice-first AI English speaking tutor that holds natural conversations, provides non-interruptive pronunciation/grammar/vocabulary feedback after each response, and builds a personalized adaptive learning plan that evolves with every session.
 
-The platform should also include AI Coach Notifications that proactively help users stay consistent with their learning. The AI should send personalized reminders and recommendations, including:
+## Brand & Tone
+- **Personality**: Patient, encouraging, professional yet warm — like a trusted private tutor
+- **Voice**: Celebrates wins, frames mistakes as learning, never condescending
+- **Design aesthetic**: Modern, colorful, motivating — inspired by best-in-class language apps (vibrant progress indicators, badges, interactive cards, engaging animations)
+- **Primary color**: Indigo #6366F1
+- **Typography**: Plus Jakarta Sans (headings), Inter (body)
+
+## Key Features
+1. **AI Voice Conversation Tutor** — Natural voice conversations with real-time AI responses
+2. **Personalized Learning Path** — Proficiency assessment → adaptive lesson plan, continuously updated
+3. **Speaking Practice Scenarios** — Real-life situations: food ordering, travel, business meetings, job interviews, presentations
+4. **Pronunciation Feedback** — Non-interruptive coaching delivered after each speaking turn
+5. **Grammar & Vocabulary Coaching** — In-context corrections with simple explanations and natural alternatives
+6. **Conversation History** — Review past sessions, feedback, and vocabulary learned
+7. **Daily Practice Challenges** — Streak-based short exercises for consistent daily habit
+8. **Progress Tracking** — Pronunciation score, grammar improvement score, vocabulary growth over time
+9. **Achievement Badges** — Milestone rewards to maintain motivation
+10. **AI Coach Notifications** — Personalized reminders, weekly summaries, inactivity nudges, progress milestones
+
+## Dashboard
+The dashboard motivates consistent practice and clearly shows improvement:
+- Daily speaking goal with progress bar
+- Current English proficiency level (Beginner / Intermediate / Advanced)
+- Speaking streak counter
+- Weekly learning progress chart
+- Pronunciation score
+- Grammar improvement score
+- Vocabulary growth count
+- Recently learned words
+- Upcoming practice recommendations
+- AI insights and personalized learning tips
+
+## Proficiency Levels
+- **Beginner**: Foundation vocabulary, simple conversations, basic grammar
+- **Intermediate**: Broader vocabulary, complex sentences, varied topics
+- **Advanced**: Nuanced expression, professional contexts, accent refinement
+
+## Learning Goals (User-Selectable at Onboarding)
+- Daily conversation
+- Business English
+- Travel
+- Job interviews
+- Presentations
+- Exam preparation (IELTS, TOEFL)
+
+## AI Coach Notifications
+Proactive, personalized nudges to keep users consistent:
 - Daily speaking practice reminders
 - Weekly learning summaries
 - Vocabulary review reminders
@@ -34,33 +76,12 @@ The platform should also include AI Coach Notifications that proactively help us
 - Personalized exercises based on previous mistakes
 - Motivation messages after periods of inactivity
 
-Users should have full control over notification preferences, allowing them to enable or disable each reminder type and choose how often they receive notifications.
+Users control all notification preferences (enable/disable per type, set frequency).
 
-Key Features:
-- AI voice conversation tutor
-- Personalized learning path
-- Speaking practice scenarios
-- Pronunciation feedback
-- Grammar and vocabulary coaching
-- Conversation history
-- Daily practice challenges
-- Progress tracking
-- Achievement badges
-- AI Coach Notifications
-
-Dashboard:
-The dashboard should motivate users to practice consistently and clearly show their improvement. It should include:
-- Daily speaking goal
-- Current English proficiency level
-- Speaking streak
-- Weekly learning progress
-- Pronunciation score
-- Grammar improvement score
-- Vocabulary growth
-- Recently learned words
-- Upcoming practice recommendations
-- AI insights and personalized learning tips
-
-The application should feature a modern, friendly, and motivating design inspired by today's best language-learning apps. It should use colorful progress indicators, achievement badges, interactive lesson cards, conversation history, and engaging animations to make learning enjoyable.
-
-The goal is to make English speaking practice accessible, personalized, and confidence-building by combining conversational AI, continuous feedback, and adaptive learning into one immersive experience.
+## Strategic Principles
+1. **Voice-first** — Speaking practice is the core; all features support it
+2. **Non-interruptive feedback** — Corrections come after each turn, not during, to preserve confidence and flow
+3. **Adaptive difficulty** — AI always meets users at their current level and grows with them
+4. **Streak & motivation design** — Gamification (streaks, badges, daily goals) keeps users returning daily
+5. **Judgment-free environment** — Safe space to make mistakes and grow at their own pace
+6. **Scenario-grounded practice** — Real-world situations make vocabulary and grammar immediately useful
