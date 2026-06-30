@@ -9,7 +9,7 @@ interface AppLayoutProps {
 const navLinks = [
   { to: "/dashboard", label: "Dashboard", icon: "🏠" },
   { to: "/practice", label: "Practice", icon: "🎙️" },
-  { to: "/history", label: "History", icon: "📋" },
+
   { to: "/progress", label: "Progress", icon: "📈" },
 ];
 
