@@ -34,11 +34,10 @@ SpeakEasy AI is a voice-first AI English speaking tutor that holds natural conve
 3. **Speaking Practice Scenarios** — Real-life situations: food ordering, travel, business meetings, job interviews, presentations
 4. **Pronunciation Feedback** — Non-interruptive coaching delivered after each speaking turn
 5. **Grammar & Vocabulary Coaching** — In-context corrections with simple explanations and natural alternatives
-6. **Conversation History** — Review past sessions, feedback, and vocabulary learned
-7. **Daily Practice Challenges** — Streak-based short exercises for consistent daily habit
-8. **Progress Tracking** — Pronunciation score, grammar improvement score, vocabulary growth over time
-9. **Achievement Badges** — Milestone rewards to maintain motivation
-10. **AI Coach Notifications** — Personalized reminders, weekly summaries, inactivity nudges, progress milestones
+6. **Daily Practice Challenges** — Streak-based short exercises for consistent daily habit
+7. **Progress Tracking** — Pronunciation score, grammar improvement score, vocabulary growth over time
+8. **Achievement Badges** — Milestone rewards to maintain motivation
+9. **AI Coach Notifications** — Personalized reminders, weekly summaries, inactivity nudges, progress milestones
 
 ## Dashboard
 The dashboard motivates consistent practice and clearly shows improvement:
