@@ -13,6 +13,11 @@ export async function loader({ request }: LoaderFunctionArgs) {
 export default function DashboardPage() {
   return (
     <AppLayout>
+      <div className="flex flex-col gap-1 px-6 pt-4">
+        <p className="text-sm" style={{ color: "var(--muted-foreground)" }}>
+          Your learning hub — daily goals, streak, scores, and AI insights at a glance. 👍
+        </p>
+      </div>
       <Dashboard />
     </AppLayout>
   );
