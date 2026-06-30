@@ -1,272 +1,278 @@
 [
   {
     "id": "voice-conversation-ai",
-    "description": "System supports real-time voice conversations with an AI tutor, accepting speech input and returning spoken AI responses without interrupting the user mid-turn.",
+    "description": "Users can hold a natural, real-time spoken conversation with the AI tutor — speaking into their device and receiving a spoken AI response — without the AI cutting them off mid-turn.",
     "type": "explicit",
     "severity": "critical"
   },
   {
     "id": "non-interruptive-feedback-delivery",
-    "description": "Pronunciation, grammar, and vocabulary feedback is delivered only after each complete user speaking turn, never during the turn.",
+    "description": "Pronunciation, grammar, and vocabulary feedback is only delivered after the user finishes speaking their full turn — never while they are still talking — so their confidence and conversational flow are preserved.",
     "type": "explicit",
     "severity": "critical"
   },
   {
     "id": "pronunciation-feedback",
-    "description": "After each speaking turn, the system provides a pronunciation coaching note identifying specific errors and suggesting corrections.",
+    "description": "After each speaking turn, the user receives specific pronunciation coaching that identifies exactly what was mispronounced and tells them how to correct it.",
     "type": "explicit",
-    "severity": "critical"
+    "severity": "high"
   },
   {
     "id": "grammar-coaching",
-    "description": "After each speaking turn, the system provides in-context grammar corrections with plain-language explanations and natural alternatives.",
+    "description": "After each speaking turn, the user receives grammar corrections written in plain language, with natural alternative phrasings shown so they understand how a fluent speaker would say the same thing.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "vocabulary-coaching",
-    "description": "After each speaking turn, the system provides vocabulary coaching including suggestions for more natural or precise word choices.",
+    "description": "After each speaking turn, the user receives vocabulary suggestions pointing out more natural, precise, or advanced word choices they could have used.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "proficiency-assessment-onboarding",
-    "description": "On first use, the system assesses the user's English proficiency level and assigns them to Beginner, Intermediate, or Advanced.",
+    "description": "When a new user starts for the first time, the product assesses their current English ability and places them into one of three levels: Beginner, Intermediate, or Advanced.",
     "type": "explicit",
     "severity": "critical"
   },
   {
     "id": "adaptive-learning-path",
-    "description": "The system generates and continuously updates a personalized lesson plan that adapts to the user's current proficiency and session history.",
-    "type": "explicit",
-    "severity": "critical"
-  },
-  {
-    "id": "adaptive-difficulty",
-    "description": "Conversation difficulty, vocabulary, and grammar complexity automatically adjust to match the user's current proficiency level and evolve as the user improves.",
+    "description": "Each user gets a personalized lesson plan that is automatically created from their proficiency level and session history, and is continuously updated as they practice.",
     "type": "explicit",
     "severity": "high"
   },
   {
+    "id": "adaptive-difficulty",
+    "description": "The vocabulary, topic complexity, and grammar expectations of conversations automatically match the user's current level and increase as the user improves over time.",
+    "type": "explicit",
+    "severity": "critical"
+  },
+  {
     "id": "learning-goal-selection",
-    "description": "During onboarding, the user can select one or more learning goals (Daily Conversation, Business English, Travel, Job Interviews, Presentations, Exam Prep: IELTS/TOEFL).",
+    "description": "During sign-up or onboarding, users choose one or more learning goals from a set list: Daily Conversation, Business English, Travel, Job Interviews, Presentations, and Exam Prep (IELTS/TOEFL). The product tailors content to those goals.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "practice-scenarios",
-    "description": "The system offers structured speaking practice scenarios covering real-life situations including food ordering, travel, business meetings, job interviews, and presentations.",
+    "description": "Users can practice speaking through structured real-life scenarios covering everyday situations such as ordering food, travelling, business meetings, job interviews, and giving presentations.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "daily-practice-challenges",
-    "description": "The system provides daily short practice challenges that contribute to a streak counter, encouraging consistent daily use.",
+    "description": "Every day, the product offers the user a short practice challenge. Completing it counts towards their daily streak and reinforces a consistent daily habit.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "speaking-streak-tracking",
-    "description": "The system tracks and displays the user's consecutive-day speaking streak, resetting if a day is missed.",
+    "description": "The product tracks and displays how many consecutive days the user has completed at least one practice session, motivating them to keep their streak alive.",
+    "type": "explicit",
+    "severity": "high"
+  },
+  {
+    "id": "streak-reset-on-missed-day",
+    "description": "If a user misses a full calendar day without completing any practice, their streak counter resets to zero.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "daily-speaking-goal-progress",
-    "description": "The dashboard shows a daily speaking goal with a progress bar reflecting the user's practice completed vs. target for the current day.",
+    "description": "The dashboard shows a daily speaking goal with a progress bar so users can see how much of today's target they have already completed.",
     "type": "explicit",
-    "severity": "high"
+    "severity": "medium"
   },
   {
     "id": "pronunciation-score-tracking",
-    "description": "The system computes and stores a cumulative pronunciation score per user, displayed on the dashboard and updated after each session.",
+    "description": "The product calculates and displays a cumulative pronunciation score for each user, which is updated after every session and shown prominently on the dashboard.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "grammar-improvement-score-tracking",
-    "description": "The system computes and stores a grammar improvement score per user, displayed on the dashboard and updated over time.",
+    "description": "The product calculates and displays a grammar improvement score for each user, updated over time and shown on the dashboard so users can see their grammatical progress.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "vocabulary-growth-tracking",
-    "description": "The system tracks the count of vocabulary items learned and displays vocabulary growth on the dashboard.",
+    "description": "The product counts and displays how many vocabulary items the user has learned or been corrected on, giving them a tangible measure of their word-knowledge growth.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "recently-learned-words",
-    "description": "The dashboard displays a list of words recently learned or corrected during practice sessions.",
+    "description": "The dashboard shows a list of words the user recently encountered, learned, or was corrected on during practice sessions.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "weekly-progress-chart",
-    "description": "The dashboard includes a chart showing the user's learning activity and progress over the past week.",
+    "description": "The dashboard includes a visual chart showing the user's learning activity and improvement over the past week.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "upcoming-practice-recommendations",
-    "description": "The dashboard surfaces upcoming or recommended practice sessions personalized to the user's plan and weak areas.",
+    "description": "The dashboard surfaces recommended upcoming practice sessions chosen specifically for the user based on their learning plan and weaker areas.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "ai-insights-tips",
-    "description": "The dashboard presents AI-generated personalized insights and learning tips derived from the user's session history.",
+    "description": "The dashboard displays AI-generated personalized insights and tips drawn from the user's session history to guide their next learning steps.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "proficiency-level-display",
-    "description": "The dashboard shows the user's current assigned proficiency level (Beginner / Intermediate / Advanced).",
+    "description": "The dashboard always shows the user's current proficiency level — Beginner, Intermediate, or Advanced — so they know exactly where they stand.",
     "type": "explicit",
     "severity": "medium"
   },
   {
+    "id": "proficiency-level-progression",
+    "description": "As a user's scores and performance improve, the product automatically promotes them to a higher proficiency level (e.g., Beginner to Intermediate, Intermediate to Advanced).",
+    "type": "explicit",
+    "severity": "high"
+  },
+  {
     "id": "achievement-badges",
-    "description": "The system awards and displays achievement badges when users hit defined milestones (e.g., streak length, sessions completed, score thresholds).",
+    "description": "The product awards and displays achievement badges when users reach defined milestones such as streak lengths, sessions completed, or score thresholds, to keep them motivated.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "notification-daily-reminder",
-    "description": "The system sends daily speaking practice reminder notifications to the user.",
+    "description": "The product sends users a daily reminder to complete their speaking practice.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "notification-weekly-summary",
-    "description": "The system sends weekly learning summary notifications recapping progress.",
+    "description": "The product sends users a weekly summary notification recapping their learning progress over the past week.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "notification-inactivity-nudge",
-    "description": "The system detects periods of user inactivity and sends motivational nudge notifications to re-engage.",
+    "description": "When the product detects a user has been inactive for a period of time, it sends a motivational message to encourage them to return and practice.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "notification-vocabulary-review",
-    "description": "The system sends vocabulary review reminder notifications prompting the user to revisit previously learned words.",
+    "description": "The product sends reminders prompting users to revisit and review words they have previously learned.",
     "type": "explicit",
-    "severity": "low"
+    "severity": "medium"
   },
   {
     "id": "notification-pronunciation-suggestion",
-    "description": "The system sends notifications suggesting targeted pronunciation practice based on areas of weakness.",
+    "description": "The product sends notifications suggesting targeted pronunciation practice in areas where the user has shown weakness.",
     "type": "explicit",
-    "severity": "low"
+    "severity": "medium"
   },
   {
     "id": "notification-progress-milestone",
-    "description": "The system sends notifications when the user reaches a progress milestone or earns an achievement badge.",
+    "description": "The product notifies users when they reach a progress milestone or earn an achievement badge.",
     "type": "explicit",
     "severity": "medium"
   },
   {
     "id": "notification-personalized-exercise",
-    "description": "The system sends notifications containing personalized exercises generated from the user's past mistakes.",
+    "description": "The product sends users personalized practice exercises generated from mistakes they made in previous sessions.",
     "type": "explicit",
-    "severity": "low"
+    "severity": "medium"
   },
   {
     "id": "notification-user-preferences",
-    "description": "Users can enable or disable each notification type individually and set frequency preferences; the system respects these settings.",
+    "description": "Users can individually enable or disable each notification type and set how frequently they receive them; the product respects these preferences at all times.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "24-7-availability",
-    "description": "The AI tutor is available at any time of day without scheduled downtime, supporting users across time zones.",
+    "description": "The AI tutor is available at any hour of the day or night, every day, with no scheduled downtime, supporting users in any time zone.",
     "type": "explicit",
     "severity": "critical"
   },
   {
     "id": "judgment-free-tone",
-    "description": "All AI responses, feedback, and UI copy frame errors as learning opportunities; no negative or condescending language is used.",
+    "description": "All feedback, AI responses, and product copy frame every mistake as a normal part of learning. No language is negative, condescending, or discouraging.",
     "type": "explicit",
     "severity": "high"
   },
   {
     "id": "user-account-persistence",
-    "description": "User profiles, progress, scores, streaks, learned words, and preferences persist across sessions and devices.",
-    "type": "hidden",
+    "description": "Each user's profile, progress scores, streak, learned words, goals, and preferences are saved and available whenever and wherever they log in — across sessions and devices.",
+    "type": "explicit",
     "severity": "critical"
   },
   {
     "id": "user-authentication",
-    "description": "Users must authenticate (sign up / log in) to access personalized features, progress data, and notifications.",
-    "type": "hidden",
+    "description": "Users must create an account and log in to access their personalized learning features, progress history, and notification settings.",
+    "type": "explicit",
     "severity": "critical"
   },
   {
     "id": "session-history-storage",
-    "description": "The system stores per-session transcripts or summaries sufficient to power adaptive learning, personalized exercises, and AI insights.",
-    "type": "hidden",
-    "severity": "critical"
+    "description": "The product retains enough information from each practice session to power personalized exercises, adaptive learning adjustments, and AI coaching insights.",
+    "type": "explicit",
+    "severity": "high"
   },
   {
     "id": "microphone-permission-handling",
-    "description": "The app requests and gracefully handles microphone permissions, providing clear guidance if access is denied.",
+    "description": "The product asks for microphone access before voice sessions begin and provides clear, friendly guidance to users who have blocked or not yet granted microphone permissions.",
     "type": "hidden",
-    "severity": "critical"
+    "severity": "high"
   },
   {
     "id": "speech-to-text-accuracy",
-    "description": "User speech is transcribed with sufficient accuracy to enable meaningful grammar and pronunciation analysis.",
+    "description": "The product transcribes what the user says accurately enough to detect grammar errors, pronunciation issues, and vocabulary choices that warrant coaching.",
     "type": "hidden",
     "severity": "critical"
   },
   {
     "id": "text-to-speech-ai-response",
-    "description": "AI tutor responses are delivered as natural-sounding synthesized speech, not text-only output.",
-    "type": "hidden",
-    "severity": "high"
+    "description": "The AI tutor responds to users in natural-sounding spoken audio, not as written text on screen, keeping the experience genuinely conversational.",
+    "type": "explicit",
+    "severity": "critical"
   },
   {
     "id": "low-latency-ai-response",
-    "description": "AI voice responses are returned with low enough latency to maintain a natural conversational flow (target: under 3 seconds per turn).",
+    "description": "The AI responds quickly enough after each user turn that the conversation feels natural — with a target of under 3 seconds per reply.",
     "type": "hidden",
     "severity": "high"
   },
   {
     "id": "brand-color-typography",
-    "description": "UI uses primary color Indigo #6366F1, Plus Jakarta Sans for headings, and Inter for body text throughout.",
+    "description": "The product's visual design uses Indigo (#6366F1) as its primary color, Plus Jakarta Sans for headings, and Inter for body text, consistently throughout the experience.",
     "type": "explicit",
     "severity": "low"
   },
   {
     "id": "mobile-web-compatibility",
-    "description": "The application is usable on mobile browsers and/or native mobile form factors, given the on-the-go learner audience.",
+    "description": "The product works on mobile devices so that users can practice English on the go, not only at a desktop computer.",
     "type": "hidden",
     "severity": "high"
   },
   {
     "id": "data-privacy-compliance",
-    "description": "Voice recordings and user learning data are handled in compliance with applicable privacy regulations (e.g., GDPR, COPPA where relevant); users can delete their data.",
+    "description": "Voice recordings and personal learning data are handled in line with applicable privacy laws. Users can request deletion of their data at any time.",
     "type": "hidden",
-    "severity": "high"
-  },
-  {
-    "id": "streak-reset-on-missed-day",
-    "description": "Speaking streak resets to zero when the user fails to complete at least one practice session on a given calendar day.",
-    "type": "hidden",
-    "severity": "medium"
+    "severity": "critical"
   },
   {
     "id": "scenario-content-library",
-    "description": "The system maintains a content library of practice scenarios covering at minimum the six stated domains (food ordering, travel, business, job interviews, presentations, exam prep).",
-    "type": "hidden",
+    "description": "The product maintains a library of practice scenarios spanning at least the six core domains: food ordering, travel, business meetings, job interviews, presentations, and exam preparation.",
+    "type": "explicit",
     "severity": "high"
   },
   {
-    "id": "proficiency-level-progression",
-    "description": "The system can promote or adjust a user's proficiency level (Beginner → Intermediate → Advanced) as their scores and performance improve over time.",
-    "type": "hidden",
-    "severity": "high"
+    "id": "gamification-engagement-design",
+    "description": "The product uses visual motivators — such as vibrant progress indicators, interactive cards, and animations — to make the learning experience feel engaging and rewarding, not like a chore.",
+    "type": "explicit",
+    "severity": "medium"
   }
 ]
