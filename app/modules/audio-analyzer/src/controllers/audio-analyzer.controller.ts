@@ -80,7 +80,24 @@ export async function getTranscribeStatus(req: Request, res: Response) {
 export async function getTranscribeAsset(req: Request, res: Response) {
   const ticketId = routeParam(req.params.ticketId);
   const filename = routeParam(req.params.filename);
-  const asset = await audioAnalyzer.getAsset(ticketId, filename);
+
+  if (!ticketId || !filename) {
+    return res.status(404).json({ ok: false, message: "Ticket or filename not provided" });
+  }
+
+  let asset: Awaited<ReturnType<typeof audioAnalyzer.getAsset>>;
+  try {
+    asset = await audioAnalyzer.getAsset(ticketId, filename);
+  } catch (error) {
+    if (error instanceof AudioAnalyzerError && error.status === 404) {
+      return res.status(404).json({ ok: false, message: "Asset not found" });
+    }
+    throw error;
+  }
+
+  if (!asset || !asset.stream) {
+    return res.status(404).json({ ok: false, message: "Asset not found" });
+  }
 
   if (asset.contentType) {
     res.setHeader("Content-Type", asset.contentType);
